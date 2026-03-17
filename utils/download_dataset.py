@@ -12,7 +12,7 @@ def main():
     if response.status_code == 200:
         # Open the downloaded bytes and extract them
         with ZipFile(BytesIO(response.content)) as zip_file:
-            zip_file.extractall('../dataset')
+            zip_file.extractall('/dataset')
         print('Download and extraction complete!')
 
 
